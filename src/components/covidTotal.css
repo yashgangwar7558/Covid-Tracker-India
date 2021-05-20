@@ -1,0 +1,130 @@
+/* body{
+    background-image: url(../images/back5.jpg);
+    background-color: rgb(245, 243, 243);
+    text-align: center;
+} */
+
+.body{
+    height: 100vh;
+    padding: 20px;
+    background-image: url(../images/back5.jpg);
+    text-align: center;
+}
+
+.heading_div{
+   text-align: center;
+   margin-bottom: 60px;
+   color: whitesmoke;
+}
+
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.live{
+    font-weight: bold;
+    font-size: 25px;
+    animation: animate 1.5s linear infinite;
+}
+@keyframes animate{
+    0%{
+      opacity: 0;
+    }
+    50%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
+    }
+  }
+
+.card_div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card_inner{
+    width: 400px;
+    height: 170px;
+    margin-bottom: 50px;
+    /* border: solid; */
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.card_inner:hover{
+    transform: scale(1.05);
+    box-shadow: 1px 1px 2px 2px rgb(240, 235, 235);
+}
+
+.card_inner:nth-child(1){
+    background-color: rgb(77, 77, 161);
+}
+.card_inner:nth-child(2){
+    background-color: rgb(243, 72, 72);
+}
+.card_inner:nth-child(3){
+    background-color: rgb(226, 193, 47);
+}
+.card_inner:nth-child(4){
+    background-color: rgb(214, 40, 147);
+}
+.card_inner:nth-child(5){
+    background-color: rgb(67, 170, 86);
+}
+.card_inner:nth-child(6){
+    background-color: rgb(196, 140, 19);
+}
+
+
+span{
+  color: rgb(226, 224, 224);
+  font-size: 15px;
+  font-weight: bold;
+}
+.card_name{
+   color: #e9e3e3;
+   font-size: 30px;
+   font-weight: bolder;
+   border: none;
+   margin: 5px;
+}
+.card_total{
+   margin-top: 20px;
+   color: aliceblue;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 40px;
+   text-justify: auto;
+   text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+button{
+    cursor: pointer;
+    background-color: rgb(212, 64, 11);
+    text-decoration: none;
+    border: none;
+    padding: 15px;
+    color: aliceblue;
+    font-size: 15px;
+    font-weight: bolder;
+    border-radius: 50px;
+    transition: all 0.2s ease-in-out;
+}
+button:hover{
+    background-color: rgb(252, 94, 36);
+    transform: scale(0.9);
+}
